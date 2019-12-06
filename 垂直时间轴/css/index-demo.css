@@ -1,0 +1,529 @@
+@font-face {
+    font-family: 'icomoon';
+    src        : url('../fonts/icomoon.eot?rretjt');
+    src        : url('../fonts/icomoon.eot?#iefixrretjt') format('embedded-opentype'),
+        url('../fonts/icomoon.woff?rretjt') format('woff'),
+        url('../fonts/icomoon.ttf?rretjt') format('truetype'),
+        url('../fonts/icomoon.svg?rretjt#icomoon') format('svg');
+    font-weight: normal;
+    font-style : normal;
+}
+
+
+[class^="icon-"],
+[class*=" icon-"] {
+    font-family   : 'icomoon';
+    speak         : none;
+    font-style    : normal;
+    font-weight   : normal;
+    font-variant  : normal;
+    text-transform: none;
+    line-height   : 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing : antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+body html {
+    font-size: 100%;
+    padding  : 0;
+    margin   : 0;
+}
+
+header {
+    display: block;
+}
+
+* {
+    padding: 0;
+    margin : 0;
+}
+
+
+/* Reset 
+ width=content+padding+border
+ (此时，当div的宽度为50%时，而border和padding为px时，那么content会随着实际的宽度进行自动缩放
+*/
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing   : border-box;
+    box-sizing        : border-box;
+}
+
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+body {
+    font-weight: 500;
+    font-size  : 1.05em;
+    font-family: "Microsoft YaHei", "Segoe UI", "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+
+.html-container {
+    margin: 0 auto;
+}
+
+.html-header {
+    text-align    : center;
+    background    : #66677c;
+    letter-spacing: -1px;
+    padding       : 1em 190px 1em;
+}
+
+.html-header h1 {
+
+    color      : #D5D6E2;
+    font-weight: 600;
+    font-size  : 2em;
+    /** 设置以百分比计的行高：*/
+    line-height: 1;
+
+}
+
+
+.html-header h1 span {
+    display    : block;
+    font-size  : 60%;
+    font-weight: 400;
+    padding    : 0.8em 0 0.5em 0;
+    color      : #c3c8cd;
+}
+
+.html-links {
+    /** 规定段落中的文本不进行换行*/
+    position   : relative;
+    white-space: nowrap;
+    font-size  : 1.5em;
+}
+
+.html-links a {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.html-links a:hover,
+.html-links a:focus {
+    color: #74777b;
+}
+
+.html-links::after {
+    position   : absolute;
+    width      : 2px;
+    height     : 100%;
+    background : #dbdbdb;
+    content    : '';
+    transform  : rotate3d(0, 0, 1, 22.5deg);
+    left       : 50%;
+    top        : 0;
+    margin-left: -1px;
+
+}
+
+.html-icon {
+    display        : inline-block;
+    margin         : 0.5em;
+    padding        : 0em 0;
+    width          : 1.5em;
+    text-decoration: none;
+}
+
+.html-icon span {
+    display: none;
+}
+
+.html-icon::before {
+    font-family: 'icomoon';
+}
+
+/* icomoon */
+.icon-html-home-outline:before {
+    content: "\e5000";
+}
+
+.icon-html-arrow-forward-outline:before {
+    content: "\e5001";
+}
+
+.demo {
+    padding: 25px 0;
+}
+
+
+
+
+.main-timeline {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.main-timeline::before {
+    content  : '';
+    height   : 100%;
+    width    : 2px;
+    border   : 2px dashed #000;
+    transform: translateX(-50%);
+    position : absolute;
+    left     : 50%;
+    top      : 30px;
+
+}
+
+.main-timeline::after {
+    content: '';
+    display: block;
+    clear  : both;
+}
+
+
+.main-timeline .timeline {
+    padding : 100px 70px 0 25px;
+    margin  : 0 50px 0 0;
+    width   : 50%;
+    float   : left;
+    position: relative;
+}
+
+.main-timeline .timeline-content {
+    padding        : 15px 15px 15px 40px;
+    display        : block;
+    border         : 2px solid #00A79B;
+    border-radius  : 15px 0 15px 15px;
+    position       : relative;
+    text-decoration: none;
+}
+
+.main-timeline .timeline-content:hover {
+    text-decoration: none;
+}
+
+
+.main-timeline .timeline-content:after {
+    content         : '';
+    background-color: #00A79B;
+    height          : 18px;
+    width           : 15px;
+    position        : absolute;
+    right           : -15px;
+    top             : -2px;
+    /*圆形  第一个值大小  第二值 左右水平位置  第三个上下垂直 位置*/
+    clip-path: polygon(100% 0, 0 0, 0 100%);
+}
+
+.main-timeline .timeline-year {
+    color           : #fff;
+    background-color: #00A79B;
+    position        : absolute;
+    text-align      : center;
+    right           : -120px;
+    top             : -85px;
+    border-radius   : 50%;
+    height          : 100px;
+    width           : 100px;
+    line-height     : 98px;
+    font-size       : 32px;
+    font-weight     : 900;
+}
+
+.main-timeline .timeline-year:after {
+    content          : '';
+    position         : absolute;
+    height           : 130px;
+    width            : 130px;
+    border           : 8px solid #00A79B;
+    border-left-color: transparent;
+    border-radius    : 50%;
+    transform        : translateX(-50%) translateY(-50%) rotate(-20deg);
+    left             : 50%;
+    top              : 50%;
+}
+
+.main-timeline .timeline-icon {
+    color           : #fff;
+    background-color: #00A79B;
+    font-size       : 35px;
+    text-align      : center;
+    line-height     : 50px;
+    height          : 50px;
+    width           : 50px;
+    border-radius   : 50%;
+    transform       : translateY(-50%);
+    position        : absolute;
+    top             : 50%;
+    left            : -25px;
+    transition      : all 0.3s;
+}
+
+
+.main-timeline .title {
+    color         : #222;
+    font-size     : 20px;
+    font-weight   : 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin        : 0 0 7px 0;
+}
+
+.main-timeline .description {
+    color         : #222;
+    font-size     : 15px;
+    letter-spacing: 1px;
+    /* 让内容两端对齐*/
+    text-align: justify;
+    margin    : 0 0 5px;
+}
+
+.main-timeline .timeline:nth-child(even) {
+    padding: 100px 25px 0 70px;
+    margin : 0 0 0 50px;
+    float  : right;
+}
+
+
+.main-timeline .timeline:nth-child(even) .timeline-content {
+    padding      : 15px 40px 15px 15px;
+    border-radius: 0 15px 15px 15px;
+}
+
+
+.main-timeline .timeline:nth-child(even) .timeline-content:after {
+    transform: rotateY(180deg);
+    right    : auto;
+    left     : -15px;
+}
+
+.main-timeline .timeline:nth-child(even) .timeline-year {
+    right: auto;
+    left : -120px;
+}
+
+.main-timeline .timeline:nth-child(even) .timeline-year:after {
+    transform: translateX(-50%) translateY(-50%) rotate(200deg);
+}
+
+.main-timeline .timeline:nth-child(even) .timeline-icon {
+    left : auto;
+    right: -25px
+}
+
+.timeline:nth-child(4n+2) .timeline-content,
+.timeline:nth-child(4n+2) .timeline-year:after {
+    border-color: #9E005D;
+}
+
+.timeline:nth-child(4n+2) .timeline-year:after {
+    border-left-color: transparent;
+}
+
+.timeline:nth-child(4n+2) .timeline-content:after,
+.timeline:nth-child(4n+2) .timeline-icon,
+.timeline:nth-child(4n+2) .timeline-year {
+    background-color: #9E005D;
+}
+
+.timeline:nth-child(4n+3) .timeline-content,
+.timeline:nth-child(4n+3) .timeline-year:after {
+    border-color: #f24f0e;
+}
+
+.timeline:nth-child(4n+3) .timeline-year:after {
+    border-left-color: transparent;
+}
+
+.timeline:nth-child(4n+3) .timeline-content:after,
+.timeline:nth-child(4n+3) .timeline-icon,
+.timeline:nth-child(4n+3) .timeline-year {
+    background-color: #f24f0e;
+}
+
+.timeline:nth-child(4n+4) .timeline-content,
+.timeline:nth-child(4n+4) .timeline-year:after {
+    border-color: #0870C5;
+}
+
+.timeline:nth-child(4n+4) .timeline-year:after {
+    border-left-color: transparent;
+}
+
+.timeline:nth-child(4n+4) .timeline-content:after,
+.timeline:nth-child(4n+4) .timeline-icon,
+.timeline:nth-child(4n+4) .timeline-year {
+    background-color: #0870C5;
+}
+
+@media screen and (max-width:767px) {
+    .main-timeline:before {
+        display: none
+    }
+
+    .main-timeline .timeline {
+        width        : 100%;
+        padding-top  : 80px;
+        padding-right: 12px;
+        margin-bottom: 20px;
+    }
+
+    .main-timeline .timeline:nth-child(even) {
+        padding-left : 10px;
+        padding-top  : 80px;
+        margin-bottom: 20px;
+    }
+
+    .main-timeline .timeline-content:after {
+        display: none;
+    }
+
+    .main-timeline .timeline-year {
+        font-size  : 24px;
+        line-height: 70px;
+        height     : 70px;
+        width      : 70px;
+        right      : 0;
+        top        : -65px;
+    }
+
+    .main-timeline .timeline-year:after {
+        display: none;
+    }
+
+    .main-timeline .timeline:nth-child(even) .timeline-year {
+        left: 3px;
+    }
+}
+
+.timeline:nth-child()
+/* bootstrap样式*/
+
+
+.container {
+    /* margin-right 不设置的话默认是0，width 定宽之后，margin-left取值为 auto ，自动占据了剩余的全部宽度 */
+    margin-right : auto;
+    margin-left  : auto;
+    padding-left : 15px;
+    padding-right: 15px;
+}
+
+.row {
+    margin-left : -15px;
+    margin-right: -15px;
+}
+
+.container:before,
+.container:after,
+.row:before,
+.row:after {
+
+    content: " ";
+    display: block;
+    clear  : both;
+}
+
+
+.col-xs-1,
+.col-sm-1,
+.col-md-1,
+.col-lg-1,
+.col-xs-2,
+.col-sm-2,
+.col-md-2,
+.col-lg-2,
+.col-xs-3,
+.col-sm-3,
+.col-md-3,
+.col-lg-3,
+.col-xs-4,
+.col-sm-4,
+.col-md-4,
+.col-lg-4,
+.col-xs-5,
+.col-sm-5,
+.col-md-5,
+.col-lg-5,
+.col-xs-6,
+.col-sm-6,
+.col-md-6,
+.col-lg-6,
+.col-xs-7,
+.col-sm-7,
+.col-md-7,
+.col-lg-7,
+.col-xs-8,
+.col-sm-8,
+.col-md-8,
+.col-lg-8,
+.col-xs-9,
+.col-sm-9,
+.col-md-9,
+.col-lg-9,
+.col-xs-10,
+.col-sm-10,
+.col-md-10,
+.col-lg-10,
+.col-xs-11,
+.col-sm-11,
+.col-md-11,
+.col-lg-11,
+.col-xs-12,
+.col-sm-12,
+.col-md-12,
+.col-lg-12 {
+    position     : relative;
+    min-height   : 1px;
+    padding-left : 15px;
+    padding-right: 15px;
+}
+
+
+
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+
+    .col-md-12 {
+        width: 100%;
+    }
+
+    .col-md-1,
+    .col-md-2,
+    .col-md-3,
+    .col-md-4,
+    .col-md-5,
+    .col-md-6,
+    .col-md-7,
+    .col-md-8,
+    .col-md-9,
+    .col-md-10,
+    .col-md-11,
+    .col-md-12 {
+        float: left;
+    }
+}
+
+
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
