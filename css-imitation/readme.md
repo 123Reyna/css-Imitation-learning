@@ -1,5 +1,14 @@
 我的学习模仿资料就是来源于下面这个网站，很好的模仿学习网站哦
 
+
+安装less 
+   1.npm install less -g
+   2.lessc less文件名.less 生成的css文件名.css
+
+安装package.json
+   1.npm init
+   2.npm install webpack --save-dev || npm install webpack -S
+
 欢迎访问jQuery之家
 
 更多精彩内容请访问jQuery之家：http://www.htmleaf.com

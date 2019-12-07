@@ -1,0 +1,16 @@
+{
+  "name": "css-imitation",
+  "version": "1.0.0",
+  "description": "我的学习模仿资料就是来源于下面这个网站，很好的模仿学习网站哦",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack --config webpack.dev.config.js "
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}
