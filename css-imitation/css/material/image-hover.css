@@ -43,25 +43,18 @@
     transform: scale(3);
 }
 
-.box .box-content{
-  transform:translateY(-50%) scale(1)
-}
-
-/* 
-
-
 .box .box-content {
+    position  : absolute;
     color     : #fff;
     width     : 100%;
-    transform : translateY(-50%) scale(0);
-    position  : absolute;
     top       : 50%;
     left      : 0;
     transition: all 0.4s linear;
+    transform : translateY(-50%) scale(0);
 }
 
 .box:hover .box-content {
-    transform: translateY(-50%) scale(1);
+    transform: translateY(-50%) scale(1)
 }
 
 .box .title {
@@ -71,6 +64,7 @@
     text-transform: uppercase;
     margin        : 0;
 }
+
 
 .box .post {
     font-size     : 16px;
@@ -94,6 +88,7 @@
     transition: all 0.3s ease 0.4s;
 }
 
+
 .box:hover .icon li {
     opacity  : 1;
     transform: scale(1);
@@ -114,6 +109,25 @@
     display      : block;
     transition   : all 0.5s ease;
 }
+
+.box .icon li a:hover {
+    color           : #fff;
+    background-color: #11998e;
+    box-shadow      : 0 0 5px #000;
+
+}
+
+
+@media only screen and (max-width:990px) {
+    .box {
+        margin: 0 0 30px;
+    }
+} 
+/* 
+
+
+
+
 
 .box .icon li a:hover {
     color           : #fff;
