@@ -1,6 +1,6 @@
 module.exports = {
     entry: { //入口文件
-        bundle: __dirname + '/src/sourceFile.js'
+        bundle: __dirname + '/src/js/sourceFile.js'
     },
     //输出文件
     //__dirname 代表当前目录,Node.js会去识别

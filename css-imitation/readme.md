@@ -8,6 +8,8 @@
 安装package.json
    1.npm init
    2.npm install webpack --save-dev || npm install webpack -S
+   3.在webpack.config.js下配置webpack打包,运行npm run 
+
 
 欢迎访问jQuery之家
 
